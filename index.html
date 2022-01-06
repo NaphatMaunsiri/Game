@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="container" id="game">
+        <div class="avatar">
+            <div class="hero">
+                <img src="image\1.jpg" alt="">
+                <p>{{HPhore}}</p>
+            </div>
+            <div class="monster">
+                <img src="image\2.jpg" alt="">
+                <p>{{HPmonster}}</p>
+            </div>
+        </div>
+        <div class="btn">
+            <button @click="attack(1)">attack</button>
+            <button @click="attack(2)">spacial attack</button>
+            <button @click="attack(3)">reset</button>
+            
+        </div>
+    </div>
+
+</body>
+<script src="d.js"></script>
+
+</html>
